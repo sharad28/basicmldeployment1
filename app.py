@@ -5,10 +5,14 @@ from flask import Flask, jsonify, request
 import numpy as np
 import joblib
 
-app = flask(__name__)
+app = Flask(__name__)
+
+# @app.route('/')
+# def helo_world():
+#     return "hello world"
 
 @app.route('/')
-def homepage():
+def input():
     return flask.render_template('index.html')
 
 @app.route('/predict',methods=['post','get'])
@@ -21,3 +25,6 @@ def predict():
     y_bar = model.predict(to_pred)
     return jsonify ({'prediction':list(y_bar)})
     
+if __name__ == '__main__':
+    # app.run(host='0.0.0.0', port=8080)
+    app.run(port=8000)
