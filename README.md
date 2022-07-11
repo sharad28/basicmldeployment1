@@ -14,7 +14,7 @@ py -m venv ./env
 ```
 
 #here, py (python) is creating enviroment using venv package, 
-# ./ represent the current folder and env is a folder name 
+./ represent the current folder and env is a folder name 
 
 3. To activate just created enviroment
 ```
