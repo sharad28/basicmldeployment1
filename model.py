@@ -20,8 +20,7 @@ class model:
         self.isnull_check()
         print("Check for Dublicate vales")
         self.check_dublicate()
-        print(self.X.head())
-
+        
     def split_data(self):
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y,
          test_size=0.33, random_state=42)
