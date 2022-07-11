@@ -1,1 +1,2 @@
-# basicmldeployment1
+# Basic ML/AI app deployment on heroku
+
