@@ -1,2 +1,2 @@
-# Basic ML/AI app deployment on heroku
+# Basic ML/AI app (Flask) deployment on heroku
 
